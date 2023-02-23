@@ -56,7 +56,7 @@ body {
     transition: opacity 0.15s ease-in 0.2s;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
     .container {
         display: flex;
         flex-direction: column;
