@@ -32,6 +32,8 @@ body {
     margin: 10px;
     position: relative;
     transition: all 500ms ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -54,13 +56,13 @@ body {
     transition: opacity 0.15s ease-in 0.2s;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     .container {
-        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
     }
 
-    .panel:nth-of-type(4),
-    .panel:nth-of-type(5) {
-        display: none;
+    .panel h3 {
+        font-size: 24px;
     }
-}
